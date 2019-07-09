@@ -1,0 +1,6 @@
+[submodule "v2d_data"]
+	path = v2d_data
+	url = git@github.com:thehyve/v2d_data.git
+[submodule "genetics-pipe"]
+	path = genetics-pipe
+	url = git@github.com:thehyve/genetics-pipe.git
