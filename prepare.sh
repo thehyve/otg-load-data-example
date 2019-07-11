@@ -9,3 +9,6 @@ git submodule update --init --recursive
 # unzip 1000 Genome data 
 unzip plink_format_b37.zip
 
+# build docker images
+docker build ./v2d_data/ --tag v2d
+docker build ./genetics-pipe/ --tag pipe
