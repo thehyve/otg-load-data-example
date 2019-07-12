@@ -1,4 +1,6 @@
 plink_format_b*.zip
 plink_format_b*/
 v2d_data_output/
+variant-index.tar
+Volumes/Hyve/variant-index/
 *.swp

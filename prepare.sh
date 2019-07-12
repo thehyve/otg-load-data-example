@@ -9,6 +9,10 @@ git submodule update --init --recursive
 # unzip 1000 Genome data 
 unzip plink_format_b37.zip
 
+# download variant index parquet
+./gdown.pl 'https://drive.google.com/uc?export=download&id=1U2ASKjqzi5Pmd_McqbH27TjJRB1L3OBY' variant-index.tar
+tar xf variant-index.tar
+
 # build docker images
 docker build ./v2d_data/ --tag v2d
 docker build ./genetics-pipe/ --tag pipe
