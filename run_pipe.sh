@@ -8,5 +8,4 @@ docker run -it --rm \
     -v "$(pwd)"/Volumes/Hyve/variant-index:/variant-index \
     -v "$(pwd)"/pipe_output:/pipe_output \
     pipe \
-    java -jar ot-geckopipe.jar variant-disease -f application.conf
-#disease-variant-gene
+    /bin/bash -c "java -jar ot-geckopipe.jar variant-disease -f application.conf ; java -jar ot-geckopipe.jar disease-variant-gene -f application.conf"
